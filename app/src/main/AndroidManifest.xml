@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droidgenesis.os_i.tictactoe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ttt"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ttt_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/mainActivityTitle" />
+        <activity
+            android:name=".AboutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/about"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_AI.Player_Vs_AI_3x3.PlayerVsAI_3x3_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_3x3_AI"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_AI.Player_Vs_AI_5x5.PlayerVsAI_5x5_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_5x5_AI"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_AI.Player_Vs_AI_4x4.PlayerVsAI_4x4_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_4x4_AI"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/help_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_Player.Player_Vs_Player_3x3"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_3x3_two_players"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_Player.Player_Vs_Player_4x4"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_4x4_two_players"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_Player.Player_Vs_Player_5x5"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_5x5_two_players"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Player_Vs_Player.Player_Vs_Player_5x5board_3x3rules"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/board_5x5_two_players"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".CreditsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/credits"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

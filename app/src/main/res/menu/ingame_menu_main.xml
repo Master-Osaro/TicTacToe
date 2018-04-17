@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.genesis.sahx.fmogithub.MainActivity">
+    <item
+        android:id="@+id/action_start_game"
+        android:orderInCategory="100"
+        android:title="Start Game"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_clearboard"
+        android:orderInCategory="100"
+        android:title="Clear Board"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_reset_scores"
+        android:orderInCategory="100"
+        android:title="Reset Scores"
+        app:showAsAction="never"
+        />
+
+</menu>

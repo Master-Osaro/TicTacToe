@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tttbg"
+    android:orientation="vertical"
+    tools:context="com.droidgenesis.os_i.tictactoe.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/myView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="14dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/audiowide"
+                        android:text="@string/ttt_title"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="@string/alc"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/btn_player_vs_player"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/audiowide"
+                        android:text="@string/playerVplayer" />
+
+                    <Button
+                        android:id="@+id/btn_player_vs_cpu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/audiowide"
+                        android:text="@string/playerVcpu" />
+                 </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
